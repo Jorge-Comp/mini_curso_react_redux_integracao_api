@@ -1,24 +1,26 @@
 import React, { Component } from "react";
-class User extends Component{
-    render(){
+import UserForm from "./UserForm";
+class User extends Component {
+    render() {
         let list = [
             {
-                name:"Jorge",
+                name: "Jorge",
                 email: "jorge.murilo@gmail.com"
             },
             {
-                name:"Joao",
+                name: "Joao",
                 email: "joao@gmail.com"
             }
         ]
-        return(
+        return (
             <div>
-                <table border = '1px'>
+                <UserForm></UserForm>
+                <table border='1px'>
                     <tr>
                         <th>Nome</th>
                         <th>Email</th>
                     </tr>
-                    {list.map((item) =>{
+                    {list.map((item) => {
                         return <tr>
                             <td>
                                 {item.name}
@@ -27,7 +29,7 @@ class User extends Component{
                                 {item.email}
                             </td>
                         </tr>
-                    } )}
+                    })}
                 </table>
             </div>
         )

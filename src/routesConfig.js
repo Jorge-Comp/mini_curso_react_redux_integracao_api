@@ -9,7 +9,7 @@ const routesConfig = [
     },
     {
         path: "/User",
-        component:User,
+        component: User,
         exact: true
     },
 ]
