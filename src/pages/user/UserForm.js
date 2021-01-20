@@ -13,7 +13,7 @@ const UserFormFunc = props => {
             <label>
                 Name
             </label>
-            <Field type="text" component="input" name="name"/>
+            <Field type="text" component="input" name="nome"/>
             <label>
                 Email
             </label>
